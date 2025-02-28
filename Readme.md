@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Арина Кузнецова](https://up.htmlacademy.ru/adaptive-individual/2/user/2328159).
-* Наставник: `Неизвестно`.
+* Наставник: [Малик Киров](https://https://htmlacademy.ru/profile/id17217).
 
 ---
 
