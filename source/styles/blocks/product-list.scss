@@ -1,0 +1,135 @@
+.product-list {
+  padding-top: 27px;
+  padding-bottom: 25px;
+}
+
+@media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+  .product-list {
+    padding-bottom: 74px;
+    padding-top: 65px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-list {
+    padding-top: 74px;
+    padding-bottom: 71px;
+  }
+}
+
+.product-list__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+  margin: 0;
+  padding: 0 20px;
+  margin-bottom: 40px;
+  width: 100%;
+  overflow-wrap: anywhere;
+}
+
+@media (min-width: $tablet-width) {
+  .product-list__title {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 0 30px;
+    margin-bottom: 84px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-list__title {
+    padding: 0 110px;
+  }
+}
+
+.product-list__container {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+  .product-list__container {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-list__container {
+    width: 1440px;
+  }
+}
+
+.product-list__list {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  width: 320px;
+}
+
+@media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+  .product-list__list {
+    display: grid;
+    width: 768px;
+    grid-template-columns: repeat(2, 324px);
+    gap: 60px;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-list__list {
+    display: grid;
+    grid-template-columns: repeat(4, 245px);
+    width: 1440px;
+    padding: 0 110px;
+    gap: 63px 80px;
+  }
+}
+
+.product-list__product-card {
+  position: relative;
+  display: block;
+  width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  .product-list__product-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: $mobile-only) {
+  .product-list__product-card:first-child {
+    padding-top: 21px;
+  }
+
+  .product-list__product-card:first-child::before {
+    display: block;
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100vw;
+    background-color: #ebebeb;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: $mobile-only) {
+  .product-list__product-card::after {
+    display: block;
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100vw;
+    background-color: #ebebeb;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
+}

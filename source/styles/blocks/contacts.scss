@@ -1,0 +1,136 @@
+
+.contacts__container {
+  position: relative;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+  .contacts__container--catalog {
+    background-color: #f2f2f2;
+  }
+}
+
+.contacts__header-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  min-height: 112px;
+  width: 320px;
+  padding: 26px 20px;
+  margin: 0 auto;
+  align-items: center;
+  overflow-wrap: anywhere;
+}
+
+@media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+  .contacts__header-container {
+    grid-template-columns: repeat(2, 163px);
+    width: 768px;
+    padding: 60px 70px;
+    gap: 302px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__header-container {
+    position: absolute;
+    min-height: 199px;
+    width: 565px;
+    background-color: #ffffff;
+    padding: 60px 78px 60px 80px;
+    margin: 0;
+    left: calc((100% - 1220px) / 2);
+    top: 95px;
+    z-index: 2;
+  }
+}
+
+.contacts__header-title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+  margin: 0;
+}
+
+@media (max-width: $mobile-only) {
+  .contacts__header-title {
+    padding-right: 8px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__header-title {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.contacts__header-location {
+  font-family: "lato", "Aril", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__header-location {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: end;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__header-location {
+    text-align: start;
+    justify-self: end;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__break {
+    display: block;
+    margin-top: 20px;
+  }
+}
+
+.contacts__map-container {
+  position: relative;
+  height: 362px;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+  .contacts__map-container {
+    height: 400px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__map-container {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+.contacts__map-image {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.contacts__map-iframe {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: block;
+  position: relative;
+  z-index: 1;
+}

@@ -1,0 +1,216 @@
+.additional-products {
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+  .additional-products {
+    margin-bottom: 80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-products {
+    margin-bottom: 96px;
+  }
+}
+
+.additional-products__container {
+  width: 320px;
+  display: block;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+  .additional-products__container {
+    width: 768px;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-products__container {
+    width: 1440px;
+    padding: 0 109px 0 110px;
+  }
+}
+
+.additional-products__headline {
+  position: relative;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: start;
+  color: #000000;
+  margin: 0;
+  width: fit-content;
+  margin-bottom: 35px;
+  max-width: calc(100% - 50px);
+  overflow-wrap: anywhere;
+}
+
+@media (min-width: $tablet-width) {
+  .additional-products__headline {
+    font-size: 32px;
+    line-height: 32px;
+    margin-left: 40px;
+    margin-bottom: 80px;
+    max-width: calc(100% - 150px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-products__headline {
+    margin-left: 0;
+    max-width: calc(100% - 100px);
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+.additional-products__headline::before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100vw;
+  position: absolute;
+  top: 10px;
+  right: calc(100% + 41px);
+  background-color: #68b738;
+}
+
+@media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+  .additional-products__headline::before {
+    top: 14px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-products__headline::before {
+    top: 18px;
+  }
+}
+
+.additional-products__headline::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100vw;
+  position: absolute;
+  top: 10px;
+  left: calc(100% + 41px);
+  background-color: #68b738;
+  overflow-wrap: anywhere;
+}
+
+@media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+  .additional-products__headline::after {
+    top: 14px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-products__headline::after {
+    top: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-products__list-container {
+    display: flex;
+    gap: 80px;
+  }
+}
+
+.additional-products__promo-image {
+  background-color: #68b738;
+  width: 280px;
+  min-height: 290px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 59px 61px 43px 58px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+@media (max-width: $mobile-only) {
+  .additional-products__promo-image {
+    background-image: url("../../images/promo/promo-cat.png");
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+  .additional-products__promo-image {
+    background-image: url("../../images/promo/promo-cat-tablet@2x.png");
+    flex-direction: row;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    min-height: unset;
+    padding: 56px 126px 61px 78px;
+    gap: 262px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-products__promo-image {
+    display: flex;
+    background-image: url("../../images/promo/promo-cat-desktop@2x.png");
+    flex-direction: column;
+    width: 245px;
+    min-height: 288px;
+    background-size: cover;
+    background-position: center;
+    padding: 56px 42px 43px;
+  }
+}
+
+.additional-products__promo-image::before {
+  content: "";
+  display: block;
+  width: 78px;
+  height: 80px;
+  background-image: url("../../icons/additional-products-promo-icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-shrink: 0;
+}
+
+@media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+  .additional-products__promo-image::before {
+    width: 80px;
+    height: 82px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-products__promo-image::before {
+    width: 80px;
+    height: 83px;
+  }
+}
+
+.additional-products__description {
+  font-family: "lato", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+@media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+  .additional-products__description {
+    text-align: start;
+    padding-top: 5px;
+  }
+}

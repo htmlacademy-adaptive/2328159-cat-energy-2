@@ -1,0 +1,63 @@
+.developer-logo {
+  text-decoration: none;
+}
+
+.developer-logo:active {
+  opacity: 0.3;
+}
+
+.developer-logo__title {
+  font-family: "lato", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #444444;
+  margin: 0;
+  overflow-wrap: anywhere;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 23px;
+}
+
+@media (min-width: $tablet-width) {
+  .developer-logo__title {
+    width: 168px;
+    justify-content: end;
+  }
+}
+
+.developer-logo__title::after {
+  display: block;
+  content: "";
+  mask-image: url("../../icons/stack.svg#developer-logo");
+  mask-position: center;
+  mask-repeat: no-repeat;
+  width: 27px;
+  height: 34px;
+  background-color: #666666;
+  color: #666666;
+  flex-shrink: 0;
+}
+
+.developer-logo:hover .developer-logo__title::after {
+  background-color: #68b738;
+  color: #68b738;
+}
+
+.developer-logo:focus .developer-logo__title::after {
+  background-color: #68b738;
+  color: #68b738;
+}
+
+.developer-logo:focus-visible .developer-logo__title::after {
+  background-color: #68b738;
+  color: #68b738;
+  outline: none;
+}
+
+.developer-logo:active .developer-logo__title::after {
+  background-color: #68b738;
+  color: #68b738;
+}

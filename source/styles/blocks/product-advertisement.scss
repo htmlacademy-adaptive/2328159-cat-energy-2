@@ -1,0 +1,196 @@
+.product-advertisement {
+  position: relative;
+  padding: 27px 20px 0;
+}
+
+@media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+  .product-advertisement {
+    padding: 65px 120px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-advertisement {
+    padding: 29px calc((100% - 1061px) / 2) 52px;
+    margin-bottom: 82px;
+    position: static;
+  }
+}
+
+.product-advertisement::before {
+  display: block;
+  content: "";
+  width: 100%;
+  height: calc(100% - 178px);
+  position: absolute;
+  background: linear-gradient(rgba(104, 183, 56, 0.85)), (rgba(104, 183, 56, 0.85)), url("../../images/advertisement/product-advertisement-cat-mobile@1x.png") no-repeat center / cover;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+@media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+  .product-advertisement::before {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-advertisement::before {
+    left: unset;
+    bottom: 0;
+    height: 100%;
+    max-height: 694px;
+    width: 50%;
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/advertisement/product-advertisement-cat-desktop@2x.png") no-repeat left/ cover;
+  }
+}
+
+.product-advertisement__container {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+  .product-advertisement__container {
+    padding-bottom: 526px;
+    width: 528px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-advertisement__container {
+    min-height: 499px;
+    width: 416px;
+    padding-top: 81px;
+    margin: 0;
+  }
+}
+
+.product-advertisement__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  font-style: normal;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 25px;
+  overflow-wrap: anywhere;
+}
+
+@media (min-width: $tablet-width) {
+  .product-advertisement__title {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: start;
+    margin-bottom: 40px;
+    color: #000000;
+  }
+}
+
+.product-advertisement__slogan {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 29px;
+  overflow-wrap: anywhere;
+}
+
+@media (min-width: $tablet-width) {
+  .product-advertisement__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: start;
+    margin-bottom: 50px;
+    color: #000000;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-advertisement__slogan {
+    margin-bottom: 52px;
+  }
+}
+
+.product-advertisement__image {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 3px;
+}
+
+@media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+  .product-advertisement__image {
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-advertisement__image {
+    position: absolute;
+    top: 0;
+    left: 367px;
+  }
+}
+
+.product-advertisement__link {
+  display: block;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #68b738;
+  width: 280px;
+  min-height: 40px;
+  padding: 10px 64px;
+  margin: 0 auto;
+  overflow-wrap: anywhere;
+}
+
+@media (min-width: $tablet-width) {
+  .product-advertisement__link {
+    font-size: 20px;
+    line-height: 26px;
+    padding: 14px 26px;
+    width: 242px;
+    min-height: 54px;
+    margin: 0;
+  }
+}
+
+.product-advertisement__link:hover {
+  background-color: #5eaa2f;
+}
+
+.product-advertisement__link:focus {
+  background-color: #5eaa2f;
+}
+
+.product-advertisement__link:focus-visible {
+  background-color: #5eaa2f;
+}
+
+.product-advertisement__link:active {
+  background-color: #5eaa2f;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.product-advertisement__link:disabled {
+  background-color: #ebebeb;
+}

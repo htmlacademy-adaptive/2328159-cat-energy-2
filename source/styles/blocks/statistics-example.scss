@@ -1,0 +1,174 @@
+@media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+  .statistics-example {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 104px;
+    gap: 10px;
+  }
+}
+
+.statistics-example__module-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 32px;
+  justify-content: center;
+  margin-bottom: 34px;
+}
+
+@media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+  .statistics-example__module-wrapper {
+    margin-bottom: 0;
+    gap: 43px;
+    flex-shrink: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .statistics-example__module-wrapper {
+    gap: 41px;
+    margin-bottom: 60px;
+    justify-content: start;
+    flex-shrink: 0;
+  }
+}
+
+.statistics-example__module {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 124px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  padding: 14px 5px 0;
+  min-height: 56px;
+  gap: 7px;
+}
+
+@media (min-width: $tablet-width) {
+  .statistics-example__module {
+    width: 162px;
+    min-height: 72px;
+  }
+}
+
+.statistics-example__module-value {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  font-style: normal;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  overflow-wrap: anywhere;
+}
+
+@media (min-width: $tablet-width) {
+  .statistics-example__module-value {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.statistics-example__module-description {
+  display: block;
+  font-family: "lato", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 12px;
+  text-align: center;
+  text-transform: lowercase;
+  color: #000000;
+  width: 87px;
+  padding: 0 5px;
+  background-color: #eaeaea;
+  overflow-wrap: anywhere;
+  margin: 0 auto -16px;
+}
+
+@media (min-width: $tablet-width) {
+  .statistics-example__module-description {
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #ffffff;
+    width: max-content;
+    max-width: 143px;
+    padding: 0 9px;
+    margin-bottom: -7px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .statistics-example__module-description {
+    background-color: #f2f2f2;
+    margin-bottom: -6px;
+  }
+}
+
+.statistics-example__cost {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+  .statistics-example__cost {
+    margin-bottom: 0;
+    flex-direction: column;
+    gap: 9px;
+    align-items: end;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .statistics-example__cost {
+    justify-content: start;
+    margin-bottom: 0;
+    gap: 63px;
+    padding-left: 2px;
+  }
+}
+
+.statistics-example__cost-value {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  overflow-wrap: anywhere;
+}
+
+@media (min-width: $tablet-width) {
+  .statistics-example__cost-value {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.statistics-example__cost-description {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  overflow-wrap: anywhere;
+}
+
+@media (min-width: $tablet-width) {
+  .statistics-example__cost-description {
+    font-size: 20px;
+    line-height: 20px;
+    padding-right: 1px;
+  }
+}
