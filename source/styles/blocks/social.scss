@@ -52,6 +52,11 @@
   }
 }
 
+.social__item:focus-within {
+  outline: 1px solid #ffa500;
+}
+
+
 .social__link {
   width: 28px;
   height: 22px;

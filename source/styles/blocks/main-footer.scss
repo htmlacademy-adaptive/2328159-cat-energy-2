@@ -33,6 +33,10 @@
   }
 }
 
+.main-footer__logo-wrapper:focus-within {
+  outline: 1px solid #ffa500;
+}
+
 .main-footer__logo {
   display: block;
   width: 128px;

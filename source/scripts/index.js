@@ -1,15 +1,10 @@
 /* в этот файл добавляет скрипты*/
-let navMain = document.querySelector('.main-header__navigation');
-let navToggle = document.querySelector('.main-header__toggle');
+const navMain = document.querySelector('.main-header__navigation');
+const navToggle = document.querySelector('.main-header__toggle');
 
 navMain.classList.remove('main-header__navigation--nojs');
 
-navToggle.addEventListener('click', function () {
-  if (navMain.classList.contains('main-header__navigation--closed')) {
-    navMain.classList.remove('main-header__navigation--closed');
-    navMain.classList.add('main-header__navigation--opened');
-  } else {
-    navMain.classList.add('main-header__navigation--closed');
-    navMain.classList.remove('main-header__navigation--opened');
-  }
+navToggle.addEventListener('click', () => {
+  navMain.classList.toggle('main-header__navigation--closed');
+  navMain.classList.toggle('main-header__navigation--opened');
 });

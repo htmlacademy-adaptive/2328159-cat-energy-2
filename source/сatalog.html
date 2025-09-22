@@ -6,6 +6,8 @@
   <title>Кэт энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/icon.svg">
   <link rel="icon" sizes="16x16" href="favicon/16x16.png" type="image/png">
@@ -404,7 +406,7 @@
           <label class="visually-hidden" for="e-mail">
             Введите Ваш e-mail
           </label>
-          <input class="subscribe__login" type="text" id="e-mail" name="e-mail" required
+          <input class="subscribe__login" type="email" id="e-mail" name="e-mail" required
             placeholder="kuklachev@gmail.com">
           <button class="subscribe__button" type="submit">Подписаться</button>
 
@@ -443,18 +445,20 @@
   </main>
   <footer class=" main-footer" data-test="footer">
     <div class="main-footer__container">
-      <a class="main-footer__logo" href="#">Изображение логотипа</a>
+      <div class="main-footer__logo-wrapper">
+        <a class="main-footer__logo" href="#"><span class="visually-hidden">Изображение логотипа</span></a>
+      </div>
       <div class="main-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--icon-vkontakte" href="#">Мы в Vkonakte</a>
+            <a class="social__link social__link--icon-vkontakte" href="#"><span class="visually-hidden">Мы в Vkonakte</span></a>
           </li>
 
           <li class="social__item">
-            <a class="social__link social__link--icon-youtobe" href="#">Мы в Youtube</a>
+            <a class="social__link social__link--icon-youtobe" href="#"><span class="visually-hidden">Мы в Youtube</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--icon-telegram" href="#">Мы в Telegram</a>
+            <a class="social__link social__link--icon-telegram" href="#"><span class="visually-hidden">Мы в Telegram</span></a>
           </li>
         </ul>
       </div>
