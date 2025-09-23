@@ -29,6 +29,12 @@
   top: 0;
 }
 
+@media (min-resolution: 2dppx) {
+  .product-advertisement::before {
+    background-image: url("../../images/advertisement/product-advertisement-cat-mobile@2x.png");
+  }
+}
+
 @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
   .product-advertisement::before {
     display: none;
@@ -42,7 +48,13 @@
     height: 100%;
     max-height: 694px;
     width: 50%;
-    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/advertisement/product-advertisement-cat-desktop@2x.png") no-repeat left/ cover;
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/advertisement/product-advertisement-cat-desktop@1x.png") no-repeat left/ cover;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .product-advertisement::before {
+      background-image: url("../../images/advertisement/product-advertisement-cat-desktop@2x.png");
+    }
   }
 }
 
